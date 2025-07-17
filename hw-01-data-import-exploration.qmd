@@ -1,14 +1,13 @@
 ---
 title: "Final Practice"
 subtitle: "Section 01"
-aurthor: Kyokaali Lydia
+author: Kyokaali Lydia
 format:
   html:
     embed-resources: true
 execute: 
   echo: true
   toc: true
-  warning: false
   warning: false
 editor: visual
 editor_options: 
