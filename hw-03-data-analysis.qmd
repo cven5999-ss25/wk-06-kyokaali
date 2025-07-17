@@ -31,7 +31,10 @@ How many cities are covered in this dataset?
 
 ```{r}
 
-
+treatment |> 
+  group_by(city) |> 
+  summarise(count = n()) |> 
+  summarise(count = n())
 
 ```
 
@@ -42,7 +45,9 @@ How many cities are covered in this dataset?
 In how many cities is all waste (100%) openly dumped?
 
 ```{r}
-
+treatment |> 
+  filter(waste_treatment == "open_dump" & percent == 100) |>  
+  summarise(count = n()) 
 
 ```
 
@@ -53,7 +58,10 @@ In how many cities is all waste (100%) openly dumped?
 How many cities in which no waste (0%) is recycled fall into each income category?
 
 ```{r}
-
+treatment |> 
+  filter(waste_treatment == "recycling" & percent == 0) |> 
+  group_by(income_id) |> 
+  summarise(count = n()) 
 
 
 ```
@@ -65,7 +73,13 @@ How many cities in which no waste (0%) is recycled fall into each income categor
 What is the mean, median, and standard deviation of treatment percentages for each waste treatment option and grouped by income?
 
 ```{r}
-
+treatment |> 
+  group_by(waste_treatment, income_id) |>
+  summarise( 
+    mean = mean(percent),
+    median = median(percent), 
+    sd = sd(percent)
+  ) 
 
 
 ```
