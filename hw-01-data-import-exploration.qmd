@@ -1,11 +1,14 @@
 ---
 title: "Final Practice"
 subtitle: "Section 01"
+aurthor: Kyokaali Lydia
 format:
   html:
     embed-resources: true
 execute: 
   echo: true
+  toc: true
+  warning: false
   warning: false
 editor: visual
 editor_options: 
@@ -35,9 +38,20 @@ The data that is used for these exercises are subsets of data from the [What a W
 
 1.  Use functions you have learned in the course to explore the data the `city_data` object.
 
+    ```{r}
+    glimpse(city_data)
+
+    city_data |> names()
+
+    ```
+
 2.  Describe the variables
 
-3.  Describe the observations
+The city_data dataset contains 31 variables describing different aspects of urban waste management for 367 cities. Key variables include city and country names, income classification, population size, and the annual amount of municipal solid waste generated. There are also numerous columns indicating the percentage of waste handled by various treatment methods (like composting, landfilling, incineration, and recycling) as well as the proportional composition of waste types (such as food, glass, metals, and plastics). Additional variables capture transportation metrics, such as distances waste is transported from the city center to disposal sites. The majority of variables are numeric (double precision), while a few primarily identifiers and categorizationsare character (text) type.
+
+1.  Describe the observations
+
+Each row in the city_data dataset represents a single city from the global "What a Waste" study, totaling 367 cities. For each city, the dataset records a snapshot of demographic information, waste generation volume, methods of waste processing/treatment, the physical composition of collected waste, and logistical details about transporting waste to disposal sites. Observations may contain missing values for some variables, reflecting gaps in data reporting for certain cities. Collectively, each observation provides a comprehensive overview of a city's solid waste management practices at a particular point in time.
 
 # Task 1.2
 
