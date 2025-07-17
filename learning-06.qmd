@@ -13,15 +13,15 @@ Learning reflections are part of your weekly homework and have a weight of 20% o
 
 # Lecture
 
-<!--# Add your reflections on the lecture of this week here -->
+\<n this lecture, I learned how to create and share dynamic reports using RStudio. We explored how to build and publish web-friendly documents with Quarto and GitHub Pages, making project results accessible online. I also discovered how to include references and link content like figures and tables within a document, enhancing clarity and professionalism. On the data side, we used tools from the dplyr package to combine data from different sources, an essential skill for working with complex datasets. The session helped me appreciate how RStudio supports both data analysis and effective communication of findings.\>
 
 # Homework Assignment
 
-<!--# Add your reflections on the homework programming assignment here -->
+\<Completing the homework that brought together all the R functions we have studied throughout the course gave me the opportunity to reinforce my understanding of key concepts. The practice improved my skills. By combining multiple functions in one task, I developed a deeper appreciation for how these tools work together to produce meaningful insights. This assignment helped build my confidence in applying R \>
 
 # Readings
 
-<!--# Add your reflections on the required readings here -->
+\<The chapter deepened my understanding of how data analysis often relies on multiple interconnected tables rather than a single dataset. It emphasized the importance of identifying primary and foreign keys to define relationships and introduced join operations such as mutating and filtering joins that allow merging or subsetting datasets effectively. I appreciated how the tools in R simplify operations with intuitive functions, enabling me to focus on analysis rather than complex syntax. Overall, this chapter enriched my ability to work with complex, relational data.\>
 
 # Submit learning reflections
 
